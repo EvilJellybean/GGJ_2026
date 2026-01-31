@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenSceneButton
   button: {fileID: 503464373}
-  sceneName: PlayScene
+  sceneName: IntroScene
 --- !u!1 &678915429
 GameObject:
   m_ObjectHideFlags: 0
