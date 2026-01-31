@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 // TODO Make sprite look at player when looking at player
 
+// TODO Time to detect decrease over time
+
+// TODO Fix enemy lighting from behind
+
 public class Enemy : MonoBehaviour, ILookingCharacter
 {
     private const float RaycastHitThreshold = 0.8f;
@@ -54,6 +58,8 @@ public class Enemy : MonoBehaviour, ILookingCharacter
     public bool Active { get; set;}
 
     public Vector2 LookDirection { get; private set; }
+
+    public bool IsMoving { get; private set; }
 
     private void Awake()
     {
@@ -116,10 +122,12 @@ public class Enemy : MonoBehaviour, ILookingCharacter
 
     private void DoPatrolling()
     {
+        IsMoving = true;
+
         Vector3 currentWaypointPosition = waypointList[waypointIndex].position;
         Vector3 offset = currentWaypointPosition - rigidbody.position;
         float distance = offset.magnitude;
-        Move(offset);
+        Move(offset, moveSpeed);
 
         if (distance < targetWaypointDistance )
         {
@@ -127,12 +135,12 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         }
     }
 
-    private void Move(Vector3 offset)
+    private void Move(Vector3 offset, float speed)
     {
         Vector3 direction = offset.normalized;
         LookDirection = new Vector2(direction.x, direction.z);
 
-        rigidbody.MovePosition(rigidbody.position + direction * moveSpeed * Time.deltaTime);
+        rigidbody.MovePosition(rigidbody.position + direction * speed * Time.deltaTime);
     }
 
     private void LookForPlayer()
@@ -148,6 +156,8 @@ public class Enemy : MonoBehaviour, ILookingCharacter
 
     private void DoDetecting()
     {
+        IsMoving = false;
+
         if (PlayerInView(endDetectionDistance))
         {
             Vector3 offset = player.position - rigidbody.position;
@@ -172,8 +182,10 @@ public class Enemy : MonoBehaviour, ILookingCharacter
 
     private void DoChasing()
     {
+        IsMoving = true;
+
         Vector3 offset = player.position - rigidbody.position;
-        Move(offset);
+        Move(offset, chaseSpeed);
 
         if (!PlayerInView(endDetectionDistance))
         {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 232a2c126d9567243ba851f273145901
+guid: d3272417c7223f442b749f5f46881abd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MONSTER-3-STATIC_Sprite_Sheet_0
+      name: Stalagmite_1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,74 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c4adfcfa32f0843a76939e7fd24acb
-      internalID: 1818604930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MONSTER-3-STATIC_Sprite_Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 692922ba065af6c49b184c3cab9989b1
-      internalID: -414204439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MONSTER-3-STATIC_Sprite_Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5afedf68f62dc6143ae6563b9d05fbe8
-      internalID: 1697722824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MONSTER-3-STATIC_Sprite_Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8e6909f584940046bf3619a28cd95d1
-      internalID: 1676792410
+      spriteID: c055c071ca4dfb5449fc80016429d51e
+      internalID: -600284718
       vertices: []
       indices: 
       edges: []
@@ -188,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a11738b43e1d54e488c7ab615aebd663
+    spriteID: f52333cd23349f84898322a1cf1a1581
     internalID: 0
     vertices: []
     indices: 
@@ -196,14 +130,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      MONSTER-3-STATIC_Sprite_Sheet_0: 1818604930
-      MONSTER-3-STATIC_Sprite_Sheet_1: -414204439
-      MONSTER-3-STATIC_Sprite_Sheet_2: 1697722824
-      MONSTER-3-STATIC_Sprite_Sheet_3: 1676792410
+      Stalagmite_1_0: -600284718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
