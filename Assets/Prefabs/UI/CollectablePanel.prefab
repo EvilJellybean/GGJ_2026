@@ -45,6 +45,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3578746318569880514}
+  - component: {fileID: 2281536234414999122}
   - component: {fileID: 6838029054272405799}
   - component: {fileID: 7235736228803255975}
   - component: {fileID: 346939133110982345}
@@ -75,6 +76,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2281536234414999122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4055129574867706949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa28d4efb2433e47a094e4c95165387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectablePanel
+  root: {fileID: 2817130599466096703}
+  collectableLabel: {fileID: 6960936616906952300}
 --- !u!223 &6838029054272405799
 Canvas:
   m_ObjectHideFlags: 0
@@ -150,7 +165,7 @@ GameObject:
   - component: {fileID: 1355253078990331535}
   - component: {fileID: 6960936616906952300}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CollectableLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cats Collected: ?/?'
+  m_text: 'Cats Found: ?/?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -31,11 +29,16 @@ public class GameManager : MonoBehaviour
 
     public PlayerMask PlayerMask => playerMask;
 
-    public event Action OnPlayerDie;
+    public int CurrentCollectables { get; private set; }
+    public int MaxCollectables {  get; private set; }
+
+    public event System.Action OnPlayerDie;
+    public event System.Action OnCollectableCollected;
 
     private void Awake()
     {
         instance = this;
+        MaxCollectables = Object.FindObjectsByType<Collectable>(FindObjectsSortMode.None).Length;
     }
 
     public void KillPlayer()
@@ -51,5 +54,11 @@ public class GameManager : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void CollectCollectable()
+    {
+        CurrentCollectables++;
+        OnCollectableCollected?.Invoke();
     }
 }
