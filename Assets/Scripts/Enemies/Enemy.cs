@@ -72,10 +72,6 @@ public class Enemy : MonoBehaviour, ILookingCharacter
 
     private void OnDrawGizmos()
     {
-        if(!Active)
-        {
-            return;
-        }
         if(waypoints == null)
         {
             return;
@@ -101,7 +97,11 @@ public class Enemy : MonoBehaviour, ILookingCharacter
 
     private void Update()
     {
-        if(GameManager.Instance.State != GameManager.GameState.Playing)
+        if (!Active)
+        {
+            return;
+        }
+        if (GameManager.Instance.State != GameManager.GameState.Playing)
         {
             return;
         }
