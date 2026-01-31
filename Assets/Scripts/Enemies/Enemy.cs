@@ -66,8 +66,10 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         Active = true;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         suspicionBarCanvas.SetActive(false);
-        InitializeComponents();
+        InitializeWaypoints();
         waypoints.SetParent(null, true);
+        transform.position = waypointList[0].position;
+        rigidbody.position = transform.position;
     }
 
     private void OnDrawGizmos()
@@ -78,7 +80,7 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         }
         if(waypointList.Count != waypoints.childCount)
         {
-            InitializeComponents();
+            InitializeWaypoints();
         }
         Gizmos.color = Color.red;
         for(int i = 0; i < waypointList.Count; i++)
@@ -218,7 +220,7 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         return true;
     }
 
-    private void InitializeComponents()
+    private void InitializeWaypoints()
     {
         foreach (Transform child in waypoints)
         {
