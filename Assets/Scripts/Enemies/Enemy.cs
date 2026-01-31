@@ -71,6 +71,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if( state == State.Chasing && collision.collider.tag == "Player")
+        {
+            GameManager.Instance.KillPlayer();
+        }
+    }
+
     private void Update()
     {
         switch(state)
