@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeathPanel : MonoBehaviour
 {
     [SerializeField]
     private GameObject root;
+    [SerializeField]
+    private Button restartButton;
 
     private void Awake()
     {
@@ -13,6 +16,7 @@ public class DeathPanel : MonoBehaviour
     private void OnEnable()
     {
         GameManager.Instance.OnPlayerDie += GameManager_OnPlayerDie;
+        restartButton.onClick.AddListener(Restart_OnClick);
     }
     private void OnDisable()
     {
@@ -20,10 +24,17 @@ public class DeathPanel : MonoBehaviour
         {
             GameManager.Instance.OnPlayerDie -= GameManager_OnPlayerDie;
         }
+        restartButton.onClick.RemoveListener(Restart_OnClick);
     }
 
     private void GameManager_OnPlayerDie()
     {
         root.SetActive(true);
+        restartButton.Select();
+    }
+
+    private void Restart_OnClick()
+    {
+        GameManager.Instance.RestartScene();
     }
 }
