@@ -1233,6 +1233,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6869364536228365894, guid: 8b6c98685efb87146bec13b40deff1a9, type: 3}
   m_PrefabInstance: {fileID: 1522036805}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1536867079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1499494052067391424, guid: ba8ba851f95ff8b4d8e5b301e4c3a50a, type: 3}
+  m_PrefabInstance: {fileID: 8909863942246709420}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ccf082b333271439ac923ee5792226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMask
 --- !u!1001 &1581931684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2028,6 +2039,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 21615180}
     m_Modifications:
+    - target: {fileID: 2208011205358122052, guid: 7326825841c6d894ca4922b764823047, type: 3}
+      propertyPath: playerMask
+      value: 
+      objectReference: {fileID: 1536867079}
     - target: {fileID: 6989432782547491741, guid: 7326825841c6d894ca4922b764823047, type: 3}
       propertyPath: m_Name
       value: GameManager

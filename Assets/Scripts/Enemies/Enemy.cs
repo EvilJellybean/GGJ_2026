@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// TODO When reverting to patrol state, find closest point
+
 public class Enemy : MonoBehaviour
 {
+    private const float RaycastHitThreshold = 0.8f;
+
     private enum State
     {
         Patroling,
@@ -23,6 +27,8 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float endDetectionDistance = 1.0f;
     [SerializeField]
+    private float noMaskDetectMultiplier = 3.0f;
+    [SerializeField]
     private float detectionSeconds = 2;
     [SerializeField]
     private Transform waypoints;
@@ -32,6 +38,9 @@ public class Enemy : MonoBehaviour
     private GameObject suspicionBarCanvas;
     [SerializeField]
     private Image suspicionBarFill;
+
+    [SerializeField]
+    private LayerMask sightBlockingLayers;
 
     private List<Transform> waypointList = new List<Transform>();
     private int waypointIndex;
@@ -116,8 +125,7 @@ public class Enemy : MonoBehaviour
 
     private void LookForPlayer()
     {
-        float playerDistance = Vector3.Distance(rigidbody.position, player.position);
-        if(playerDistance < startDetectionDistance)
+        if (PlayerInView(startDetectionDistance))
         {
             state = State.Detecting;
             suspicionBarCanvas.SetActive(true);
@@ -128,8 +136,7 @@ public class Enemy : MonoBehaviour
 
     private void DoDetecting()
     {
-        float playerDistance = Vector3.Distance(rigidbody.position, player.position);
-        if(playerDistance < endDetectionDistance)
+        if (PlayerInView(endDetectionDistance))
         {
             detectionSecondsPassed += Time.deltaTime;
             suspicionBarFill.fillAmount = detectionSecondsPassed / detectionSeconds;
@@ -152,11 +159,35 @@ public class Enemy : MonoBehaviour
         Vector3 offset = player.position - rigidbody.position;
         rigidbody.MovePosition(rigidbody.position + offset.normalized * chaseSpeed * Time.deltaTime);
 
-        float playerDistance = offset.magnitude;
-        if(playerDistance > endDetectionDistance)
+        if (!PlayerInView(endDetectionDistance))
         {
             state = State.Patroling;
         }
+    }
+
+    private bool PlayerInView(float detectDistance)
+    {
+        if (!GameManager.Instance.PlayerMask.MaskMode)
+        {
+            detectDistance *= noMaskDetectMultiplier;
+        }
+
+        float playerDistance = Vector3.Distance(transform.position, player.position);
+        if (playerDistance > detectDistance)
+        {
+            return false;
+        }
+
+        if(Physics.Linecast(transform.position + Vector3.up, player.position + Vector3.up, out RaycastHit hitInfo, sightBlockingLayers))
+        {
+            float hitDistance = Vector3.Distance(hitInfo.point, player.position);
+            if (hitDistance > RaycastHitThreshold)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private void InitializeComponents()

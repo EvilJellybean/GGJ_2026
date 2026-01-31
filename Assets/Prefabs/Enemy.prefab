@@ -565,11 +565,15 @@ MonoBehaviour:
   targetWaypointDistance: 0.5
   startDetectionDistance: 2
   endDetectionDistance: 3
+  noMaskDetectMultiplier: 3
   detectionSeconds: 2
   waypoints: {fileID: 2485919970214738757}
   rigidbody: {fileID: 5518624062112130329}
   suspicionBarCanvas: {fileID: 5385068332646171507}
   suspicionBarFill: {fileID: 1676480263084090700}
+  sightBlockingLayers:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!136 &714349536812249065
 CapsuleCollider:
   m_ObjectHideFlags: 0

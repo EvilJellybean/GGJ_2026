@@ -24,7 +24,12 @@ public class GameManager : MonoBehaviour
         Dead,
     }
 
+    [SerializeField]
+    private PlayerMask playerMask;
+
     public GameState State { get; private set; } = GameState.Playing;
+
+    public PlayerMask PlayerMask => playerMask;
 
     public event Action OnPlayerDie;
 
