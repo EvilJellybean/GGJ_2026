@@ -637,7 +637,7 @@ MonoBehaviour:
   startDetectionDistance: 2
   endDetectionDistance: 3
   noMaskDetectMultiplier: 3
-  detectionSeconds: 2
+  detectionSeconds: 1.5
   waypoints: {fileID: 2485919970214738757}
   rigidbody: {fileID: 5518624062112130329}
   suspicionBarCanvas: {fileID: 5385068332646171507}
