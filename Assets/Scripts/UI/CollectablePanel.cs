@@ -8,6 +8,10 @@ public class CollectablePanel : MonoBehaviour
     private GameObject root;
     [SerializeField]
     private TMP_Text collectableLabel;
+    [SerializeField]
+    private TMP_Text goToExitLabel;
+    [SerializeField]
+    private Color objectiveCompleteColor = Color.green;
 
     private void OnEnable()
     {
@@ -28,6 +32,11 @@ public class CollectablePanel : MonoBehaviour
     private void UpdateUI()
     {
         collectableLabel.text = $"Cats Found: {GameManager.Instance.CurrentCollectables}/{GameManager.Instance.MaxCollectables}";
+
+        bool allCollectablesFound = GameManager.Instance.AllCollectablesFound;
+
+        collectableLabel.color = allCollectablesFound ? objectiveCompleteColor : Color.white;
+        goToExitLabel.gameObject.SetActive(allCollectablesFound);
     }
 
     private void GameManager_OnPlayerDie()

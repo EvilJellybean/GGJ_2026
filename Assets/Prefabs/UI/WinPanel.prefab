@@ -243,12 +243,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3578746318569880514}
-  - component: {fileID: 1469059894803732763}
+  - component: {fileID: 6558283664162316719}
   - component: {fileID: 6838029054272405799}
   - component: {fileID: 7235736228803255975}
   - component: {fileID: 346939133110982345}
   m_Layer: 5
-  m_Name: DeathPanel
+  m_Name: WinPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1469059894803732763
+--- !u!114 &6558283664162316719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,9 +283,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4055129574867706949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5402d98c411e03d4f9d5fc7cc8615f40, type: 3}
+  m_Script: {fileID: 11500000, guid: b92b3e75ed3905042a0e24bf5ba6dd71, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeathPanel
+  m_EditorClassIdentifier: Assembly-CSharp::WinPanel
   root: {fileID: 2817130599466096703}
   restartButton: {fileID: 552609898631472695}
 --- !u!223 &6838029054272405799
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Died
+  m_text: You Escaped
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

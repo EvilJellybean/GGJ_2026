@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         Playing,
         Dead,
+        Win,
     }
 
     [SerializeField]
@@ -32,7 +33,10 @@ public class GameManager : MonoBehaviour
     public int CurrentCollectables { get; private set; }
     public int MaxCollectables {  get; private set; }
 
+    public bool AllCollectablesFound => CurrentCollectables >= MaxCollectables;
+
     public event System.Action OnPlayerDie;
+    public event System.Action OnPlayerWin;
     public event System.Action OnCollectableCollected;
 
     private void Awake()
@@ -43,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void KillPlayer()
     {
-        if(State == GameState.Dead)
+        if(State != GameState.Playing)
         {
             return;
         }
@@ -60,5 +64,15 @@ public class GameManager : MonoBehaviour
     {
         CurrentCollectables++;
         OnCollectableCollected?.Invoke();
+    }
+
+    public void WinGame()
+    {
+        if (State != GameState.Playing)
+        {
+            return;
+        }
+        State = GameState.Win;
+        OnPlayerWin?.Invoke();
     }
 }
