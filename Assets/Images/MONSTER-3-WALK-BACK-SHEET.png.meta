@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32daa98954040674085fd976c493618e
+guid: 86c5938f376129a4c8f2a83b6ed4f023
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MONSTER-2-Front
+      name: MONSTER-3-WALK-BACK-SHEET_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90ab0c79b0d3aa748bfd44d009b621f1
-      internalID: -1502284202
+      spriteID: 75a6eb4f37974b941a5fc6a1cce35ce5
+      internalID: 826835209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MONSTER-2-Right
+      name: MONSTER-3-WALK-BACK-SHEET_1
       rect:
         serializedVersion: 2
         x: 32
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 994057dd5bc236345a7013347b50dce5
-      internalID: -239223642
+      spriteID: de391cd8aa8636147b19e4229c45c31a
+      internalID: 1874008569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MONSTER-2-Left
+      name: MONSTER-3-WALK-BACK-SHEET_2
       rect:
         serializedVersion: 2
         x: 64
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ba6491b75803724a95378632a419a78
-      internalID: 1892178763
+      spriteID: 1d2be5f6265c07e43a5843884864bf0d
+      internalID: 1301814420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MONSTER-2-Back
+      name: MONSTER-3-WALK-BACK-SHEET_3
       rect:
         serializedVersion: 2
         x: 96
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d872fbf356d4274c800b9c5822f4942
-      internalID: 1004730579
+      spriteID: fa8004da2b3ea4b4b94d0a56f7b83fb1
+      internalID: -966086479
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 560f14b42bc4d464bae5d654d84c2d81
+    spriteID: dcc1b1f249598994ba1c52578766fd07
     internalID: 0
     vertices: []
     indices: 
@@ -200,10 +200,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MONSTER-2-Back: 1004730579
-      MONSTER-2-Front: -1502284202
-      MONSTER-2-Left: 1892178763
-      MONSTER-2-Right: -239223642
+      MONSTER-3-WALK-BACK-SHEET_0: 826835209
+      MONSTER-3-WALK-BACK-SHEET_1: 1874008569
+      MONSTER-3-WALK-BACK-SHEET_2: 1301814420
+      MONSTER-3-WALK-BACK-SHEET_3: -966086479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
