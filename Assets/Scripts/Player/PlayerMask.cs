@@ -10,12 +10,6 @@ public class PlayerMask : MonoBehaviour
     private InputActionReference toggleMaskInput;
 
     [SerializeField]
-    private SpriteRenderer playerSprite;
-    [SerializeField]
-    private Sprite playerMask;
-    [SerializeField]
-    private Sprite playerNoMask;
-    [SerializeField]
     private Transform noMaskLight;
     [SerializeField]
     private Transform maskLight;
@@ -27,7 +21,6 @@ public class PlayerMask : MonoBehaviour
     private void Awake()
     {
         camera = Camera.main;
-        playerSprite.sprite = playerNoMask;
         noMaskLight.gameObject.SetActive(true);
         maskLight.gameObject.SetActive(false);
     }
@@ -42,7 +35,6 @@ public class PlayerMask : MonoBehaviour
         if(toggleMaskInput.action.WasPressedThisFrame())
         {
             MaskMode = !MaskMode;
-            playerSprite.sprite = MaskMode ? playerMask : playerNoMask;
             noMaskLight.gameObject.SetActive(!MaskMode);
             maskLight.gameObject.SetActive(MaskMode);
         }

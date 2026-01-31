@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IMovingCharacter
 {
     [SerializeField]
     private float moveSpeed = 5.0f;
@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private InputActionReference moveInput;
     [SerializeField]
     private Rigidbody rigidbody;
+
+    public Vector2 MoveDirection { get;private set; }
 
     private void OnEnable()
     {
@@ -25,8 +27,8 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        Vector2 moveVector = moveInput.action.ReadValue<Vector2>();
-        Vector3 moveAmount = new Vector3(moveVector.x, 0.0f, moveVector.y);
+        MoveDirection = moveInput.action.ReadValue<Vector2>();
+        Vector3 moveAmount = new Vector3(MoveDirection.x, 0.0f, MoveDirection.y);
 
         rigidbody.MovePosition(rigidbody.position + moveAmount * moveSpeed * Time.deltaTime);
     }

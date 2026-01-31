@@ -67,9 +67,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMask
   toggleMaskInput: {fileID: 0}
-  playerSprite: {fileID: 773672897970517006}
-  playerMask: {fileID: 8468138, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
-  playerNoMask: {fileID: 1458254995, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
   noMaskLight: {fileID: 2674229950920898434}
   maskLight: {fileID: 3348088635302178751}
 --- !u!54 &1192259317286511662
@@ -522,6 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5371803458851671642}
+  - component: {fileID: 3759057024972696289}
   - component: {fileID: 773672897970517006}
   m_Layer: 0
   m_Name: PlayerSprite
@@ -545,6 +543,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 854861459546425857}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &3759057024972696289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886356831502440097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaef73bd6a6a6d4f936adb29824bff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSprite
+  fps: 12
+  upMask:
+  - {fileID: 1070881155, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  rightMask:
+  - {fileID: 75717599, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  downMask:
+  - {fileID: 8468138, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  upNoMask:
+  - {fileID: -1664456452, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  rightNoMask:
+  - {fileID: -1523612590, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  downNoMask:
+  - {fileID: 1458254995, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  spriteRenderer: {fileID: 773672897970517006}
+  playerMovement: {fileID: 6856007887226005394}
+  playerMask: {fileID: 1499494052067391424}
 --- !u!212 &773672897970517006
 SpriteRenderer:
   serializedVersion: 2
