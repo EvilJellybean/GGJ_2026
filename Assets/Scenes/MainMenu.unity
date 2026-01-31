@@ -682,6 +682,7 @@ GameObject:
   - component: {fileID: 503464375}
   - component: {fileID: 503464374}
   - component: {fileID: 503464373}
+  - component: {fileID: 503464376}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -791,6 +792,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503464371}
   m_CullTransparentMesh: 1
+--- !u!114 &503464376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503464371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9175885cc385a75469e990092a9b6507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpenSceneButton
+  button: {fileID: 503464373}
+  sceneName: PlayScene
 --- !u!1 &678915429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1228,7 @@ GameObject:
   - component: {fileID: 1010120598}
   - component: {fileID: 1010120597}
   - component: {fileID: 1010120596}
+  - component: {fileID: 1010120599}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1322,6 +1338,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010120594}
   m_CullTransparentMesh: 1
+--- !u!114 &1010120599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010120594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 049f240244c97174cb94ce637809f584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuitButton
+  button: {fileID: 1010120596}
 --- !u!1 &1030171008
 GameObject:
   m_ObjectHideFlags: 0
