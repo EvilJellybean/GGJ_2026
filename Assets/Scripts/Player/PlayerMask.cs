@@ -39,14 +39,12 @@ public class PlayerMask : MonoBehaviour
             maskLight.gameObject.SetActive(MaskMode);
         }
 
-        if (MaskMode)
-        {
-            Vector3 aimPosition = GetMouseWorldPosition();
-            Vector3 offset = aimPosition - transform.position;
-            offset.y = 0;
+        Transform currentLight = MaskMode ? maskLight : noMaskLight;
+        Vector3 aimPosition = GetMouseWorldPosition();
+        Vector3 offset = aimPosition - transform.position;
+        offset.y = 0;
 
-            maskLight.rotation = Quaternion.LookRotation(offset);
-        }
+        currentLight.rotation = Quaternion.LookRotation(offset);
     }
 
     private Vector3 GetMouseWorldPosition()
