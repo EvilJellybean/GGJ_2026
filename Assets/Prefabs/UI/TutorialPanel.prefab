@@ -345,7 +345,7 @@ MonoBehaviour:
   tutorialPutOnMask: {fileID: 8374102850439329869}
   toggleMaskInput: {fileID: 0}
   tutorialMaskExplanation: {fileID: 3578390206684002800}
-  explanationSeconds: 7
+  explanationSeconds: 10
 --- !u!223 &6838029054272405799
 Canvas:
   m_ObjectHideFlags: 0
