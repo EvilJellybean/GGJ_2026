@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     [SerializeField]
     private float moveSpeed = 5.0f;
 
@@ -21,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.State != GameManager.GameState.Playing)
+        {
+            return;
+        }
+
         Vector2 moveVector = moveInput.action.ReadValue<Vector2>();
         Vector3 moveAmount = new Vector3(moveVector.x, 0.0f, moveVector.y);
 
