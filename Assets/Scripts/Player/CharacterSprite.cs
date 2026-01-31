@@ -25,15 +25,19 @@ public class CharacterSprite : MonoBehaviour
     [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
-    private PlayerMovement playerMovement;
-    [SerializeField]
     private PlayerMask playerMask;
 
+    private ILookingCharacter movingCharacter;
     private bool characterHasMask;
     private float frameInterval;
 
     private void Awake()
     {
+        movingCharacter = GetComponentInParent<ILookingCharacter>();
+        if(movingCharacter == null)
+        {
+            Debug.LogError("No character move script found");
+        }
         characterHasMask = playerMask != null;
         frameInterval = 1.0f / fps;
     }
@@ -52,7 +56,7 @@ public class CharacterSprite : MonoBehaviour
 
     private void UpdateAnimation(Sprite[] up, Sprite[] right, Sprite[] down)
     {
-        Vector2 direction = playerMovement.MoveDirection;
+        Vector2 direction = movingCharacter.LookDirection;
         if(direction.magnitude < 0.01f)
         {
             return;

@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 // TODO When reverting to patrol state, find closest point
 
-public class Enemy : MonoBehaviour
+// TODO Make sprite look at player when looking at player
+
+public class Enemy : MonoBehaviour, ILookingCharacter
 {
     private const float RaycastHitThreshold = 0.8f;
 
@@ -49,6 +52,8 @@ public class Enemy : MonoBehaviour
     private float detectionSecondsPassed;
 
     public bool Active { get; set;}
+
+    public Vector2 LookDirection { get; private set; }
 
     private void Awake()
     {
@@ -114,13 +119,20 @@ public class Enemy : MonoBehaviour
         Vector3 currentWaypointPosition = waypointList[waypointIndex].position;
         Vector3 offset = currentWaypointPosition - rigidbody.position;
         float distance = offset.magnitude;
-
-        rigidbody.MovePosition(rigidbody.position + offset.normalized * moveSpeed * Time.deltaTime);
+        Move(offset);
 
         if (distance < targetWaypointDistance )
         {
             waypointIndex = (waypointIndex + 1) % waypointList.Count;
         }
+    }
+
+    private void Move(Vector3 offset)
+    {
+        Vector3 direction = offset.normalized;
+        LookDirection = new Vector2(direction.x, direction.z);
+
+        rigidbody.MovePosition(rigidbody.position + direction * moveSpeed * Time.deltaTime);
     }
 
     private void LookForPlayer()
@@ -138,6 +150,10 @@ public class Enemy : MonoBehaviour
     {
         if (PlayerInView(endDetectionDistance))
         {
+            Vector3 offset = player.position - rigidbody.position;
+            Vector3 direction = offset.normalized;
+            LookDirection = new Vector2(direction.x, direction.z);
+
             detectionSecondsPassed += Time.deltaTime;
             suspicionBarFill.fillAmount = detectionSecondsPassed / detectionSeconds;
             if(detectionSecondsPassed > detectionSeconds)
@@ -157,7 +173,7 @@ public class Enemy : MonoBehaviour
     private void DoChasing()
     {
         Vector3 offset = player.position - rigidbody.position;
-        rigidbody.MovePosition(rigidbody.position + offset.normalized * chaseSpeed * Time.deltaTime);
+        Move(offset);
 
         if (!PlayerInView(endDetectionDistance))
         {
