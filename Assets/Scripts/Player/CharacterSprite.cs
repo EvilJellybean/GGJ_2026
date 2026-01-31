@@ -103,6 +103,8 @@ public class CharacterSprite : MonoBehaviour
 
         int frameIndex = Mathf.FloorToInt(Time.time / frameInterval) % targetFrames.Length;
         spriteRenderer.sprite = targetFrames[frameIndex];
-        transform.localScale = direction.x > 0 ? Vector3.one : new Vector3(-1, 1, 1);
+        Vector3 newScale = transform.localScale;
+        newScale.x = direction.x > 0 ? 1 : -1;
+        transform.localScale = newScale;
     }
 }

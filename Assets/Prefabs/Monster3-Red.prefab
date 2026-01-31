@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 8866275641354768877}
   - component: {fileID: 2397269777333920752}
   - component: {fileID: 153839128659485594}
+  - component: {fileID: 1614028141271023895}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -237,6 +238,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1614028141271023895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3583207192739425740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a3a6571a541984aadbc2243eb45c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FixLightingDirection
 --- !u!1 &5385068332646171507
 GameObject:
   m_ObjectHideFlags: 0
