@@ -735,39 +735,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311931136682068185, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4311931136682068185, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4311931136682068185, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 4311931136682068185, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -205
       objectReference: {fileID: 0}
     - target: {fileID: 5254780718245688463, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5254780718245688463, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5254780718245688463, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5254780718245688463, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -395
       objectReference: {fileID: 0}
     - target: {fileID: 7596590486064313853, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: m_Name
       value: PausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596590486064313853, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8007602996618378811, guid: 0f91789dbfa1fc84bb063284b2e9138d, type: 3}
       propertyPath: togglePause
