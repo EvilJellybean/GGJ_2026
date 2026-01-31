@@ -31,7 +31,7 @@ public class CollectablePanel : MonoBehaviour
 
     private void UpdateUI()
     {
-        collectableLabel.text = $"Cats Found: {GameManager.Instance.CurrentCollectables}/{GameManager.Instance.MaxCollectables}";
+        collectableLabel.text = $"{GameManager.Instance.CurrentCollectables}/{GameManager.Instance.MaxCollectables}";
 
         bool allCollectablesFound = GameManager.Instance.AllCollectablesFound;
 
