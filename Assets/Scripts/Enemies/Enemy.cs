@@ -127,7 +127,7 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         Vector3 currentWaypointPosition = waypointList[waypointIndex].position;
         Vector3 offset = currentWaypointPosition - rigidbody.position;
         float distance = offset.magnitude;
-        Move(offset);
+        Move(offset, moveSpeed);
 
         if (distance < targetWaypointDistance )
         {
@@ -135,12 +135,12 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         }
     }
 
-    private void Move(Vector3 offset)
+    private void Move(Vector3 offset, float speed)
     {
         Vector3 direction = offset.normalized;
         LookDirection = new Vector2(direction.x, direction.z);
 
-        rigidbody.MovePosition(rigidbody.position + direction * moveSpeed * Time.deltaTime);
+        rigidbody.MovePosition(rigidbody.position + direction * speed * Time.deltaTime);
     }
 
     private void LookForPlayer()
@@ -185,7 +185,7 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         IsMoving = true;
 
         Vector3 offset = player.position - rigidbody.position;
-        Move(offset);
+        Move(offset, chaseSpeed);
 
         if (!PlayerInView(endDetectionDistance))
         {

@@ -618,8 +618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2ee19cd08d8e5478daf2dca70861bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  moveSpeed: 1
-  chaseSpeed: 3
+  moveSpeed: 2
+  chaseSpeed: 6
   targetWaypointDistance: 0.5
   startDetectionDistance: 2
   endDetectionDistance: 3
