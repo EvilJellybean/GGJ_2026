@@ -5076,7 +5076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6737800974336394302, guid: c5215a3bf2cc35a488ad0284bbd84a7d, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Monster3-Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -556,20 +556,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSprite
   fps: 12
-  upMask:
+  upStaticMask:
   - {fileID: 1070881155, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
-  rightMask:
+  rightStaticMask:
   - {fileID: 75717599, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
-  downMask:
+  downStaticMask:
   - {fileID: 8468138, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
-  upNoMask:
+  upMovingMask:
+  - {fileID: 1070881155, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  rightMovingMask:
+  - {fileID: 75717599, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  downMovingMask:
+  - {fileID: 8468138, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  upStaticNoMask:
   - {fileID: -1664456452, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
-  rightNoMask:
+  rightStaticNoMask:
   - {fileID: -1523612590, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
-  downNoMask:
+  downStaticNoMask:
+  - {fileID: 1458254995, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  upMovingNoMask:
+  - {fileID: -1664456452, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  rightMovingNoMask:
+  - {fileID: -1523612590, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  downMovingNoMask:
   - {fileID: 1458254995, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
   spriteRenderer: {fileID: 773672897970517006}
-  playerMovement: {fileID: 6856007887226005394}
   playerMask: {fileID: 1499494052067391424}
 --- !u!212 &773672897970517006
 SpriteRenderer:

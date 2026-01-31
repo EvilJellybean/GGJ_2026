@@ -133,16 +133,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aaef73bd6a6a6d4f936adb29824bff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSprite
-  fps: 12
-  upMask:
-  - {fileID: 1459776999, guid: 359370e419005ed43b2e4e7fdbade7e3, type: 3}
-  rightMask:
-  - {fileID: 1921948959, guid: 359370e419005ed43b2e4e7fdbade7e3, type: 3}
-  downMask:
-  - {fileID: 1807267045, guid: 359370e419005ed43b2e4e7fdbade7e3, type: 3}
-  upNoMask: []
-  rightNoMask: []
-  downNoMask: []
+  fps: 9
+  upStaticMask:
+  - {fileID: 1676792410, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  rightStaticMask:
+  - {fileID: -414204439, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  downStaticMask:
+  - {fileID: 1818604930, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  upMovingMask:
+  - {fileID: 826835209, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  - {fileID: 1874008569, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  - {fileID: 1301814420, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  - {fileID: -966086479, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  rightMovingMask:
+  - {fileID: 2081027399, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  - {fileID: 2015337739, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  - {fileID: 1229979044, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  - {fileID: -933355302, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  downMovingMask:
+  - {fileID: -780687462, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  - {fileID: -945585493, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  - {fileID: 555480937, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  - {fileID: -411582270, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  upStaticNoMask:
+  - {fileID: 1676792410, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  rightStaticNoMask:
+  - {fileID: -414204439, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  downStaticNoMask:
+  - {fileID: 1818604930, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  upMovingNoMask:
+  - {fileID: 826835209, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  - {fileID: 1874008569, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  - {fileID: 1301814420, guid: 86c5938f376129a4c8f2a83b6ed4f023, type: 3}
+  - {fileID: 1676792410, guid: 232a2c126d9567243ba851f273145901, type: 3}
+  rightMovingNoMask:
+  - {fileID: 2081027399, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  - {fileID: 2015337739, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  - {fileID: 1229979044, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  - {fileID: -933355302, guid: a89026d15a4bb824394c7db92a9bd567, type: 3}
+  downMovingNoMask:
+  - {fileID: -780687462, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  - {fileID: -945585493, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  - {fileID: 555480937, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
+  - {fileID: -411582270, guid: d70e2c3d7b1284c49bc34adb2a00f0b3, type: 3}
   spriteRenderer: {fileID: 153839128659485594}
   playerMask: {fileID: 0}
 --- !u!212 &153839128659485594
@@ -194,7 +227,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1807267045, guid: 359370e419005ed43b2e4e7fdbade7e3, type: 3}
+  m_Sprite: {fileID: 1818604930, guid: 232a2c126d9567243ba851f273145901, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -549,7 +582,7 @@ GameObject:
   - component: {fileID: 714349536812249065}
   - component: {fileID: 5518624062112130329}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Monster3-Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

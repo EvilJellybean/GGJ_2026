@@ -3,24 +3,38 @@ using UnityEngine;
 public class CharacterSprite : MonoBehaviour
 {
     [SerializeField]
-    private float fps = 12;
+    private float fps = 9;
 
     [SerializeField]
-    private Sprite[] upMask;
+    private Sprite[] upStaticMask;
     [SerializeField]
-    private Sprite[] rightMask;
+    private Sprite[] rightStaticMask;
     [SerializeField]
-    private Sprite[] downMask;
+    private Sprite[] downStaticMask;
+
+    [SerializeField]
+    private Sprite[] upMovingMask;
+    [SerializeField]
+    private Sprite[] rightMovingMask;
+    [SerializeField]
+    private Sprite[] downMovingMask;
 
     [Space]
 
     [SerializeField]
-    private Sprite[] upNoMask;
+    private Sprite[] upStaticNoMask;
     [SerializeField]
-    private Sprite[] rightNoMask;
+    private Sprite[] rightStaticNoMask;
     [SerializeField]
-    private Sprite[] downNoMask;
-    
+    private Sprite[] downStaticNoMask;
+
+    [SerializeField]
+    private Sprite[] upMovingNoMask;
+    [SerializeField]
+    private Sprite[] rightMovingNoMask;
+    [SerializeField]
+    private Sprite[] downMovingNoMask;
+
 
     [SerializeField]
     private SpriteRenderer spriteRenderer;
@@ -46,11 +60,25 @@ public class CharacterSprite : MonoBehaviour
     {
         if(!characterHasMask || playerMask.MaskMode)
         {
-            UpdateAnimation(upMask, rightMask, downMask);
+            if (movingCharacter.IsMoving)
+            {
+                UpdateAnimation(upMovingMask, rightMovingMask, downMovingMask);
+            }
+            else
+            {
+                UpdateAnimation(upStaticMask, rightStaticMask, downStaticMask);
+            }
         }
         else
         {
-            UpdateAnimation(upNoMask, rightNoMask, downNoMask);
+            if (movingCharacter.IsMoving)
+            {
+                UpdateAnimation(upMovingNoMask, rightMovingNoMask, downMovingNoMask);
+            }
+            else
+            {
+                UpdateAnimation(upStaticNoMask, rightStaticNoMask, downStaticNoMask);
+            }
         }
     }
 
