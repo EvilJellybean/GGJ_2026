@@ -713,11 +713,31 @@ MonoBehaviour:
   - {fileID: 180740669, guid: 6c26b8a60217ae04aab6e1e740f5e1a5, type: 3}
   - {fileID: -1973147554, guid: 6c26b8a60217ae04aab6e1e740f5e1a5, type: 3}
   upStaticNoMask:
-  - {fileID: -1664456452, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  - {fileID: 411064722, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: -1838149627, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: -1567102276, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: -1990231105, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: -875537399, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: -1737901216, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: -1876378424, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
+  - {fileID: 2103249900, guid: e22da77542a7cc04bb3e90258740a8da, type: 3}
   rightStaticNoMask:
-  - {fileID: -1523612590, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  - {fileID: -1926747868, guid: d647228905e15584b87298f1448c9860, type: 3}
+  - {fileID: 1483163022, guid: d647228905e15584b87298f1448c9860, type: 3}
+  - {fileID: 1948197999, guid: d647228905e15584b87298f1448c9860, type: 3}
+  - {fileID: -395084541, guid: d647228905e15584b87298f1448c9860, type: 3}
+  - {fileID: 1739325001, guid: d647228905e15584b87298f1448c9860, type: 3}
+  - {fileID: -1978897755, guid: d647228905e15584b87298f1448c9860, type: 3}
+  - {fileID: 881555250, guid: d647228905e15584b87298f1448c9860, type: 3}
   downStaticNoMask:
-  - {fileID: 1458254995, guid: f1def43c7e94c8f4880e18ce1c61d3c7, type: 3}
+  - {fileID: 1473678911, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: -1636022359, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: 719206041, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: -905173045, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: 446796339, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: -911593257, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: -2056263727, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
+  - {fileID: -559358645, guid: 19ee4ba6f155691499184715a6a7e127, type: 3}
   upMovingNoMask:
   - {fileID: -344884304, guid: 83a48fa3feeb6fe44b80c7354cb052f7, type: 3}
   - {fileID: -1913643706, guid: 83a48fa3feeb6fe44b80c7354cb052f7, type: 3}
