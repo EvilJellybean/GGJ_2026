@@ -47,6 +47,11 @@ public class Enemy : MonoBehaviour, ILookingCharacter
     private Image suspicionBarFill;
 
     [SerializeField]
+    private AudioSource screamAudioSource;
+    [SerializeField]
+    private List<AudioClip> screamSfx = new List<AudioClip>();
+
+    [SerializeField]
     private LayerMask sightBlockingLayers;
 
     private List<Transform> waypointList = new List<Transform>();
@@ -173,6 +178,7 @@ public class Enemy : MonoBehaviour, ILookingCharacter
             if(detectionSecondsPassed > detectionSeconds)
             {
                 state = State.Chasing;
+                PlayScreamSfx();
                 suspicionBarCanvas.SetActive(false);
             }
         }
@@ -224,6 +230,11 @@ public class Enemy : MonoBehaviour, ILookingCharacter
         }
 
         return true;
+    }
+
+    private void PlayScreamSfx()
+    {
+        screamAudioSource.PlayOneShot(screamSfx[UnityEngine.Random.Range(0, screamSfx.Count)]);
     }
 
     private void InitializeWaypoints()
