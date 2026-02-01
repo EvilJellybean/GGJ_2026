@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour, ILookingCharacter
     [SerializeField]
     private Rigidbody rigidbody;
 
+    [SerializeField]
+    private AudioSource footsteps;
+
     public Vector2 LookDirection { get;private set; }
 
     public bool IsMoving { get; private set; }
@@ -31,6 +34,7 @@ public class PlayerMovement : MonoBehaviour, ILookingCharacter
 
         Vector2 moveVector = moveInput.action.ReadValue<Vector2>();
         IsMoving = moveVector.magnitude > 0.01f;
+        footsteps.volume = IsMoving ? 1 : 0;
         if (!IsMoving)
         {
             return;
