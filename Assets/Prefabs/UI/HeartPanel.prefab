@@ -402,8 +402,8 @@ MonoBehaviour:
   speedMax: 2
   lineSpeedMin: 1
   lineSpeedMax: 2
-  pitchMin: 0.85
-  pitchMax: 1
+  pitchMin: 0.9
+  pitchMax: 1.1
   audioSources:
   - {fileID: 7261705799199925586}
   - {fileID: 7770138995410036586}
