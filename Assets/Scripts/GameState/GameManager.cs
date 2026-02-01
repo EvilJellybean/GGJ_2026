@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PlayerMask playerMask;
 
+    private Dictionary<int, float> dangerSources = new Dictionary<int, float>();
+
     public GameState State { get; private set; } = GameState.Playing;
 
     public PlayerMask PlayerMask => playerMask;
@@ -34,6 +37,21 @@ public class GameManager : MonoBehaviour
     public int MaxCollectables {  get; private set; }
 
     public bool AllCollectablesFound => CurrentCollectables >= MaxCollectables;
+
+    public float DangerAmount
+    {
+        get
+        {
+            float maxDanger = 0;
+
+            Dictionary<int, float>.ValueCollection dangerList = dangerSources.Values;
+            foreach(float danger in dangerList)
+            {
+                maxDanger = Mathf.Max(maxDanger, danger);
+            }
+            return maxDanger;
+        }
+    }
 
     public event System.Action OnPlayerDie;
     public event System.Action OnPlayerWin;
@@ -74,5 +92,28 @@ public class GameManager : MonoBehaviour
         }
         State = GameState.Win;
         OnPlayerWin?.Invoke();
+    }
+
+    public void UpdateDangerSource(GameObject source, float dangerAmount)
+    {
+        int id = source.GetInstanceID();
+        if (dangerAmount > 0)
+        {
+            if (!dangerSources.ContainsKey(id))
+            {
+                dangerSources.Add(id, dangerAmount);
+            }
+            else
+            {
+                dangerSources[id] = dangerAmount;
+            }
+        }
+        else
+        {
+            if (dangerSources.ContainsKey(id))
+            {
+                dangerSources.Remove(id);
+            }
+        }
     }
 }

@@ -167,7 +167,9 @@ public class Enemy : MonoBehaviour, ILookingCharacter
             LookDirection = new Vector2(direction.x, direction.z);
 
             detectionSecondsPassed += Time.deltaTime;
-            suspicionBarFill.fillAmount = detectionSecondsPassed / detectionSeconds;
+            float suspicion = detectionSecondsPassed / detectionSeconds;
+            suspicionBarFill.fillAmount = suspicion;
+            GameManager.Instance.UpdateDangerSource(gameObject, Mathf.Clamp01(suspicion));
             if(detectionSecondsPassed > detectionSeconds)
             {
                 state = State.Chasing;
@@ -179,6 +181,7 @@ public class Enemy : MonoBehaviour, ILookingCharacter
             state = State.Patroling;
             suspicionBarCanvas.SetActive(false);
             detectionSecondsPassed = 0;
+            GameManager.Instance.UpdateDangerSource(gameObject, 0);
         }
     }
 
@@ -186,12 +189,15 @@ public class Enemy : MonoBehaviour, ILookingCharacter
     {
         IsMoving = true;
 
+        GameManager.Instance.UpdateDangerSource(gameObject, 2);
+
         Vector3 offset = player.position - rigidbody.position;
         Move(offset, chaseSpeed);
 
         if (!PlayerInView(endDetectionDistance))
         {
             state = State.Patroling;
+            GameManager.Instance.UpdateDangerSource(gameObject, 0);
         }
     }
 
