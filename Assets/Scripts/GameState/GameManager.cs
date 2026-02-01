@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     private PlayerMask playerMask;
     [SerializeField]
     private AudioSource catPickupSfx;
+    [SerializeField]
+    private AudioSource youDiedSfx;
 
     private Dictionary<int, float> dangerSources = new Dictionary<int, float>();
 
@@ -70,6 +72,10 @@ public class GameManager : MonoBehaviour
         if(State != GameState.Playing)
         {
             return;
+        }
+        if (youDiedSfx != null)
+        {
+            youDiedSfx.Play();
         }
         State = GameState.Dead;
         OnPlayerDie?.Invoke();
