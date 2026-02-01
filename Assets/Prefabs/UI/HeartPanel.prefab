@@ -262,6 +262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89d8afbe73d05940add6be21001d62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeartPanel
+  speedMin: 1
+  speedMax: 2
+  lineSpeedMin: 1
+  lineSpeedMax: 2
+  animator: {fileID: 720249048572993768}
+  pulseLine: {fileID: 4441825967516851971}
+  pulseTimeParameter: _PulseTime
 --- !u!223 &2889773064232520038
 Canvas:
   m_ObjectHideFlags: 0
