@@ -262,7 +262,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1dccf79f6f0c3ba42b156fadb14dd9eb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.69
+  m_Volume: 1
   m_Pitch: 0.72
   Loop: 0
   Mute: 0
@@ -402,8 +402,8 @@ MonoBehaviour:
   speedMax: 2
   lineSpeedMin: 1
   lineSpeedMax: 2
-  pitchMin: 0.6
-  pitchMax: 0.7
+  pitchMin: 0.85
+  pitchMax: 1
   audioSources:
   - {fileID: 7261705799199925586}
   - {fileID: 7770138995410036586}
@@ -523,7 +523,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1dccf79f6f0c3ba42b156fadb14dd9eb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 1
   m_Pitch: 0.7
   Loop: 0
   Mute: 0
@@ -656,7 +656,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1dccf79f6f0c3ba42b156fadb14dd9eb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.71
+  m_Volume: 1
   m_Pitch: 0.71
   Loop: 0
   Mute: 0
