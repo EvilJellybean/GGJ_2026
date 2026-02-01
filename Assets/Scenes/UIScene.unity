@@ -442,6 +442,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5895448521396759981, guid: f8226b8675b42f24ba9f4b85211a5fe2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895448521396759981, guid: f8226b8675b42f24ba9f4b85211a5fe2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895448521396759981, guid: f8226b8675b42f24ba9f4b85211a5fe2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895448521396759981, guid: f8226b8675b42f24ba9f4b85211a5fe2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895448521396759981, guid: f8226b8675b42f24ba9f4b85211a5fe2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895448521396759981, guid: f8226b8675b42f24ba9f4b85211a5fe2, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -661,6 +685,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1549799630683098552, guid: 29b2139925bd9964d904d41496768279, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1067031212, guid: fecef13123e374c4d9c1d80552c0b56c, type: 3}
     - target: {fileID: 3826628799514477339, guid: 29b2139925bd9964d904d41496768279, type: 3}
       propertyPath: m_Name
       value: HeartPanel
