@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 8418745631883643365}
   - component: {fileID: 437453701314358622}
   - component: {fileID: 552609898631472695}
+  - component: {fileID: 4560768651162019641}
   m_Layer: 5
   m_Name: RetartButton
   m_TagString: Untagged
@@ -196,6 +197,24 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4560768651162019641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2788902890306597632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab641cc580da33147833fdac134e718f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverClickSfx
+  hoverVolume: 0.1
+  clickVolume: 0.9
+  hoverSfx:
+  - {fileID: 8300000, guid: 9ca839e2ade315b46ae322f297c66c30, type: 3}
+  clickSfx:
+  - {fileID: 8300000, guid: 7c8eee0049946b94a848e7f35bcb51e1, type: 3}
 --- !u!1 &2817130599466096703
 GameObject:
   m_ObjectHideFlags: 0

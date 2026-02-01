@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 4742416713949452582}
   - component: {fileID: 1302566090487824187}
   - component: {fileID: 9077625797077175841}
+  - component: {fileID: 8345141414758099436}
   m_Layer: 5
   m_Name: MainMenuButton
   m_TagString: Untagged
@@ -410,6 +411,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpenSceneButton
   button: {fileID: 1302566090487824187}
   sceneName: MainMenu
+--- !u!114 &8345141414758099436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4836760168067905920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab641cc580da33147833fdac134e718f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverClickSfx
+  hoverVolume: 0.1
+  clickVolume: 0.9
+  hoverSfx:
+  - {fileID: 8300000, guid: 9ca839e2ade315b46ae322f297c66c30, type: 3}
+  clickSfx:
+  - {fileID: 8300000, guid: 7c8eee0049946b94a848e7f35bcb51e1, type: 3}
 --- !u!1 &4963685240743057692
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +662,7 @@ GameObject:
   - component: {fileID: 889296263216025275}
   - component: {fileID: 6787558756602920165}
   - component: {fileID: 1502298159227166465}
+  - component: {fileID: 2881792785991094941}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -764,3 +784,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2881792785991094941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876822943810279869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab641cc580da33147833fdac134e718f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverClickSfx
+  hoverVolume: 0.1
+  clickVolume: 0.9
+  hoverSfx:
+  - {fileID: 8300000, guid: 9ca839e2ade315b46ae322f297c66c30, type: 3}
+  clickSfx:
+  - {fileID: 8300000, guid: 7c8eee0049946b94a848e7f35bcb51e1, type: 3}
