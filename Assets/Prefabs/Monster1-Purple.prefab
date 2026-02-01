@@ -192,10 +192,10 @@ MonoBehaviour:
   moveSpeed: 1.5
   chaseSpeed: 4
   targetWaypointDistance: 0.5
-  startDetectionDistance: 2
-  endDetectionDistance: 3
+  startDetectionDistance: 2.7
+  endDetectionDistance: 3.7
   noMaskDetectMultiplier: 3
-  detectionSeconds: 1.5
+  detectionSeconds: 0.8
   waypoints: {fileID: 7840679863581205096}
   rigidbody: {fileID: 1918926056275549252}
   suspicionBarCanvas: {fileID: 910318523873164108}

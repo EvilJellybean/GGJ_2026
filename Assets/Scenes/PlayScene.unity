@@ -3252,7 +3252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016976526502838693, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5280,7 +5280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016976526502838693, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7095,7 +7095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016976526502838693, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9718,7 +9718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016976526502838693, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16285,7 +16285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016976526502838693, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20336,6 +20336,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1218950945, guid: 23b3417336e2bcc4a85696a9fbbf82ab, type: 3}
+    - target: {fileID: 3776727600897797302, guid: abea6a215591fa94390ce4424b9bdf68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21
+      objectReference: {fileID: 0}
     - target: {fileID: 4305136390553867620, guid: abea6a215591fa94390ce4424b9bdf68, type: 3}
       propertyPath: m_Name
       value: Rubble1 (12)
@@ -27007,7 +27011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016976526502838693, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_LocalPosition.x
