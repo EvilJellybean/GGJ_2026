@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour, ILookingCharacter
     {
         if (GameManager.Instance.State != GameManager.GameState.Playing)
         {
+            footsteps.volume = 0;
+            LookDirection = Vector3.zero;
             return;
         }
 

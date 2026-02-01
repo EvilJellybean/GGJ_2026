@@ -32,7 +32,12 @@ public class PlayerMask : MonoBehaviour
 
     private void Update()
     {
-        if(toggleMaskInput.action.WasPressedThisFrame())
+        if (GameManager.Instance.State != GameManager.GameState.Playing)
+        {
+            return;
+        }
+
+        if (toggleMaskInput.action.WasPressedThisFrame())
         {
             MaskMode = !MaskMode;
             noMaskLight.gameObject.SetActive(!MaskMode);

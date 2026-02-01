@@ -39,6 +39,15 @@ public class HeartPanel : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.State != GameManager.GameState.Playing)
+        {
+            for (int i = 0; i < audioSources.Count; i++)
+            {
+                audioSources[i].volume = 0;
+            }
+            return;
+        }
+
         float danger = GameManager.Instance.DangerAmount;
 
         float lineSpeed = Mathf.LerpUnclamped(lineSpeedMin, lineSpeedMax, danger);
