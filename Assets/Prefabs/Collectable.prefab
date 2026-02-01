@@ -69,8 +69,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 07edc2604d8f12f4cb9948e4d67def1c, type: 3}
   - {fileID: 8300000, guid: 47a2d0c9fc4b7cd4185b09afbfe63061, type: 3}
   - {fileID: 8300000, guid: 5d5a0aeb55f8fc64e8d808d867ab29ce, type: 3}
-  intervalMin: 10
-  intervalMax: 20
+  intervalMin: 8
+  intervalMax: 16
   randomDistance: 0
 --- !u!82 &6216511108536638915
 AudioSource:
@@ -94,7 +94,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 30
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -360,4 +360,7 @@ MonoBehaviour:
   - {fileID: 454801311, guid: 260b660085735734bbb5a543ec93a0b9, type: 3}
   - {fileID: 69833660, guid: 260b660085735734bbb5a543ec93a0b9, type: 3}
   - {fileID: -894676339, guid: 260b660085735734bbb5a543ec93a0b9, type: 3}
+  endLoopFrames: []
   spriteRenderer: {fileID: 1873590070168971195}
+  image: {fileID: 0}
+  loop: 1

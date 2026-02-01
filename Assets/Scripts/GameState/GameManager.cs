@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     private AudioSource youDiedSfx;
     [SerializeField]
     private AudioSource youEscapedSfx;
+    [SerializeField]
+    private AudioSource allCatsCollectedSfx;
 
     private Dictionary<int, float> dangerSources = new Dictionary<int, float>();
 
@@ -96,6 +98,11 @@ public class GameManager : MonoBehaviour
         if(catPickupSfx != null)
         {
             catPickupSfx.Play();
+        }
+
+        if(AllCollectablesFound && allCatsCollectedSfx != null)
+        {
+            allCatsCollectedSfx.Play();
         }
     }
 
