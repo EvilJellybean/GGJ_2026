@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private PlayerMask playerMask;
+    [SerializeField]
+    private AudioSource catPickupSfx;
 
     private Dictionary<int, float> dangerSources = new Dictionary<int, float>();
 
@@ -82,6 +84,11 @@ public class GameManager : MonoBehaviour
     {
         CurrentCollectables++;
         OnCollectableCollected?.Invoke();
+
+        if(catPickupSfx != null)
+        {
+            catPickupSfx.Play();
+        }
     }
 
     public void WinGame()
