@@ -4981,6 +4981,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1161843177, guid: 6223a0ca95e19c0439cdec0d9e16f1a3, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[0]'
+      value: 
+      objectReference: {fileID: -208923053, guid: a71506230399bef48a589b283711374a, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[1]'
+      value: 
+      objectReference: {fileID: -338744617, guid: a71506230399bef48a589b283711374a, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[2]'
+      value: 
+      objectReference: {fileID: -1034578879, guid: a71506230399bef48a589b283711374a, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1375138473, guid: a71506230399bef48a589b283711374a, type: 3}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_Name
       value: Collectable (2)
@@ -15165,6 +15181,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1068545813, guid: 6223a0ca95e19c0439cdec0d9e16f1a3, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[0]'
+      value: 
+      objectReference: {fileID: -794104401, guid: 548c8e07fa0a7804aaf7fb70e2163fb5, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[1]'
+      value: 
+      objectReference: {fileID: -1342739028, guid: 548c8e07fa0a7804aaf7fb70e2163fb5, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[2]'
+      value: 
+      objectReference: {fileID: -256080557, guid: 548c8e07fa0a7804aaf7fb70e2163fb5, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[3]'
+      value: 
+      objectReference: {fileID: 640226305, guid: 548c8e07fa0a7804aaf7fb70e2163fb5, type: 3}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_Name
       value: Collectable (3)
@@ -18725,6 +18757,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2035969458, guid: 6223a0ca95e19c0439cdec0d9e16f1a3, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[0]'
+      value: 
+      objectReference: {fileID: -1233821383, guid: 9f6b8f37af905b04a8c567f8e753914d, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1381063624, guid: 9f6b8f37af905b04a8c567f8e753914d, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2076658753, guid: 9f6b8f37af905b04a8c567f8e753914d, type: 3}
+    - target: {fileID: 2523097115999440812, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
+      propertyPath: 'frames.Array.data[3]'
+      value: 
+      objectReference: {fileID: -1403844014, guid: 9f6b8f37af905b04a8c567f8e753914d, type: 3}
     - target: {fileID: 4169101420837251975, guid: 1cf19506a4bded348a613c1a87af6a0f, type: 3}
       propertyPath: m_Name
       value: Collectable (1)
