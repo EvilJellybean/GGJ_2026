@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 760, y: -610}
+  m_AnchoredPosition: {x: 760, y: -626.6667}
   m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23631382
@@ -560,8 +560,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 760, y: -365}
-  m_SizeDelta: {x: 800, y: 250}
+  m_AnchoredPosition: {x: 760, y: -373.33334}
+  m_SizeDelta: {x: 1500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415993163
 MonoBehaviour:
@@ -583,14 +583,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Amos Wolfe -- Programming
+  m_text: 'Amos Wolfe -- Programming, Design
 
-    Kate Hall -- 2D Art
+    Kate Hall -- 2D Art, Design, Animation,
+    Catering
 
-    Lou Davidson --
-    2D Art
+    Lou Davidson -- 2D Art, Design, Animation, Narative
 
-    Rin Mcbeath -- 2D Art'
+    Rin Mcbeath
+    -- 2D Art, Design, Animation
+
+    Navi, Joey, & Rosa -- Muse'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c9d0da3213afed49bb5b9711566565b, type: 2}
   m_sharedMaterial: {fileID: 7862785548395226754, guid: 2c9d0da3213afed49bb5b9711566565b, type: 2}
