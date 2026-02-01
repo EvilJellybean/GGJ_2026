@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 3192021009398486579}
   - component: {fileID: 7980681278224035378}
   m_Layer: 5
-  m_Name: BloodTornado (1)
+  m_Name: CharacterSpinning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -957,12 +957,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleSpriteAnimation
   fps: 9
   frames:
-  - {fileID: 395345432, guid: dd3eb6971226afa4b925cd50941ef0e9, type: 3}
-  - {fileID: 116901284, guid: dd3eb6971226afa4b925cd50941ef0e9, type: 3}
-  - {fileID: 1656744369, guid: dd3eb6971226afa4b925cd50941ef0e9, type: 3}
-  - {fileID: 1835344839, guid: dd3eb6971226afa4b925cd50941ef0e9, type: 3}
-  - {fileID: 109742184, guid: dd3eb6971226afa4b925cd50941ef0e9, type: 3}
-  - {fileID: -2087683401, guid: dd3eb6971226afa4b925cd50941ef0e9, type: 3}
+  - {fileID: 596566714, guid: b723631e140f1354cb8be8bbec741706, type: 3}
+  - {fileID: 644967549, guid: b723631e140f1354cb8be8bbec741706, type: 3}
+  - {fileID: 822775577, guid: b723631e140f1354cb8be8bbec741706, type: 3}
+  - {fileID: 1602803231, guid: b723631e140f1354cb8be8bbec741706, type: 3}
+  - {fileID: -1570173077, guid: b723631e140f1354cb8be8bbec741706, type: 3}
   endLoopFrames: []
   spriteRenderer: {fileID: 0}
   image: {fileID: 3192021009398486579}
