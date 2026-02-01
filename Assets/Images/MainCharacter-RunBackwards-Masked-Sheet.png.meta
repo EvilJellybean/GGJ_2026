@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1def43c7e94c8f4880e18ce1c61d3c7
+guid: 9bebd3809a7f37140acd57464e30f0d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainCharacter-Mask-Right
+      name: MainCharacter-RunBackwards-Masked-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbdac512d23a68b4397debf39f456899
-      internalID: 75717599
+      spriteID: 30c20e9167843c64ea1571bf47a7d2f6
+      internalID: 1987122403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharacter-Mask-Left
+      name: MainCharacter-RunBackwards-Masked-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dde14f177a1317428a00fa7e0a504b2
-      internalID: -515648044
+      spriteID: 3fc1c6898f62b1441b03922d44683af2
+      internalID: -989401234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharacter-Mask-Front
+      name: MainCharacter-RunBackwards-Masked-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f339497b26f034648872a799bb977f2e
-      internalID: 8468138
+      spriteID: 4af5a725634115b4aa19c1dd49ccc3f1
+      internalID: -1976779388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainCharacter-Mask-Back
+      name: MainCharacter-RunBackwards-Masked-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -178,96 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2068d45d2b5205489351678c1cf2c3e
-      internalID: 1070881155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainCharacter-Unmask-Right
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e529185b1b058649add539c458c8d0d
-      internalID: -1523612590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainCharacter-Unmask-Left
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1bad9e292298ba46b53ccf6953243de
-      internalID: -421286740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainCharacter-Unmask-Front
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 023b13814de765f49b5bb148aa03099b
-      internalID: 1458254995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainCharacter-Unmask-Back
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bafe1ddc4235ce47aaa2fdae6a7ead9
-      internalID: -1664456452
+      spriteID: 63c376790fe3f394695f98a723e645ee
+      internalID: -628815150
       vertices: []
       indices: 
       edges: []
@@ -276,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: afbc423914e592c409fe6ebe53a6537a
+    spriteID: 641a4cfdbac4e8f46bcca175027b7408
     internalID: 0
     vertices: []
     indices: 
@@ -286,16 +198,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MainCharacter-Mask-Back: 1070881155
-      MainCharacter-Mask-Front: 8468138
-      MainCharacter-Mask-Left: -515648044
-      MainCharacter-Mask-Right: 75717599
-      MainCharacter-Unmask-Back: -1664456452
-      MainCharacter-Unmask-Front: 1458254995
-      MainCharacter-Unmask-Left: -421286740
-      MainCharacter-Unmask-Right: -1523612590
+      MainCharacter-RunBackwards-Masked-Sheet_0: 1987122403
+      MainCharacter-RunBackwards-Masked-Sheet_1: -989401234
+      MainCharacter-RunBackwards-Masked-Sheet_2: -1976779388
+      MainCharacter-RunBackwards-Masked-Sheet_3: -628815150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
